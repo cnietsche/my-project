@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 function Item({ code, description }) {
     return (
         <>
