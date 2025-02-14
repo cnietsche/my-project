@@ -2,10 +2,12 @@ import './App.css';
 import HelloWorld from './components/HelloWorld';
 import SayMyName from './components/SayMyName';
 import Person from './components/Person';
+import List from './components/List';
 
 function App() {
   const name = "Muralha Nitx";
-  const imgUrl = "https://cdn-icons-png.flaticon.com/512/1969/1969300.png";
+  const imgUrl = "" //"https://cdn-icons-png.flaticon.com/512/1969/1969300.png";
+  const catImgUrl = "" //"https://wallpapers.com/images/hd/thumbs-up-cat-meme-7avdmx4bbkkqcrj2.jpg";
 
   return (
     <div className="App">
@@ -15,9 +17,10 @@ function App() {
           Good night Tibianos!
         </h1>
         <p>Sr. { name }!</p>
+        <List />
         <HelloWorld />
         <SayMyName value="Test"/>
-        <Person name="Alex" age="25" occupation="Developer" picture="https://wallpapers.com/images/hd/thumbs-up-cat-meme-7avdmx4bbkkqcrj2.jpg" />
+        <Person name="Alex" age="25" occupation="Developer" picture={ catImgUrl } />
       </header>
     </div>
   );
